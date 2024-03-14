@@ -54,15 +54,15 @@ Once the containers are up and running, you can access the Flask application at 
 
 #### Installation
 
-If you don't have Poetry installed, install it by following the instructions on the Poetry website.
+If you don't have Poetry installed, install it by following the instructions on the [Poetry website](https://python-poetry.org/).
 
 #### Project Setup
 
 Clone the repository and navigate into the project directory:
 
 ```bash
-git clone https://yourprojecturl.git
-cd yourprojectdirectory
+git clone git@github.com:elephantatech/bookapp.git
+cd bookapp
 ```
 
 Install the project dependencies using Poetry:
@@ -101,8 +101,42 @@ poetry run pytest
 
 ## Contributing
 
-Contributions are welcome! Please read our Contributing Guide for details on how to submit pull requests to the project.
+We welcome contributions from the community and are pleased to have you join us. Here are some guidelines that will help you get started:
+
+1. Code of Conduct: By participating in this project, you agree to abide by its Code of Conduct.
+
+2. Getting Started: Take a look at the open issues for areas where you can contribute. Issues labeled good first issue are a great place to start.
+
+3. Fork and Clone: Fork the project to your GitHub account and clone your fork to your local machine.
+
+4. Environment Setup: Follow the setup instructions in the project README to get your development environment ready.
+
+5. Branching Strategy: Create a new branch for each feature, improvement, or bug fix. Use a descriptive name for your branch, such as feature/add-search-functionality or fix/login-issue.
+
+6. Make Changes: Implement your changes, adhering to the coding standards and guidelines mentioned in the project documentation.
+
+7. Write Tests: Ensure that your changes are accompanied by tests, if applicable. Run the existing test suite to ensure that your changes do not break existing functionality.
+
+8. Commit Messages: Write clear and meaningful commit messages. Include a brief description of the changes and reference related issue numbers if any.
+
+9. Submit a Pull Request (PR): Push your changes to your fork and submit a pull request to the main project. Provide a detailed description of the changes and reference the related issue(s).
+
+10. PR Review: Wait for the PR review. Be open to feedback and make necessary adjustments. Your PR may require several rounds of review and updates before merging.
+
+**NOTE: You can always open an issue to ask questions or reach out on x at [@elephantatech](https://twitter.com/elephantatech)**
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
+Copyright 2024 elephanta technologies and design inc (elephantatech)
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+   [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
