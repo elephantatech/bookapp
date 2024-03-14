@@ -1,0 +1,40 @@
+version: '3'
+services:
+  web:
+    build: .
+    environment:
+      - DATABASE_USERNAME=username
+      - DATABASE_PASSWORD=password
+      - DATABASE_HOST=db
+      - DATABASE_NAME=db_name
+    ports:
+     - "5000:5000"
+    volumes:
+      - .:/app
+    depends_on:
+     - db
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: db_name
+      MYSQL_USER: username
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./mysql/init_sql:/docker-entrypoint-initdb.d
+    restart: always
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+volumes:
+  db-data:

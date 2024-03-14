@@ -1,0 +1,28 @@
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Docker stuff
+.dockerignore
+.docker
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox
+
+# Python stuff:
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+*.log
